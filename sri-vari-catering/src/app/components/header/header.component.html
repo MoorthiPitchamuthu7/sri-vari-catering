@@ -1,0 +1,45 @@
+<header class="header">
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <span>Sri Vari Catering</span>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" (click)="toggleMenu()">
+      ☰
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" [class.open]="menuOpen">
+      <a href="#home" (click)="closeMenu()">Home</a>
+      <a href="#about" (click)="closeMenu()">About</a>
+      <a href="#services" (click)="closeMenu()">Services</a>
+      <a href="#menu" (click)="closeMenu()">Menu</a>
+      <a href="#contact" (click)="closeMenu()">Contact</a>
+
+      <div class="actions mobile">
+        <a href="tel:+919842040824" class="btn call">Call</a>
+        <a
+          href="https://wa.me/919842040824"
+          target="_blank"
+          class="btn whatsapp"
+        >
+          WhatsApp
+        </a>
+      </div>
+    </nav>
+
+    <!-- Desktop Actions -->
+    <div class="actions desktop">
+      <a href="tel:+919842040824" class="btn call">Call</a>
+      <a
+        href="https://wa.me/919842040824"
+        target="_blank"
+        class="btn whatsapp"
+      >
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</header>

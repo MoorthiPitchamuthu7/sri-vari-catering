@@ -1,0 +1,35 @@
+.services {
+  padding: 70px 20px;
+  background: #ffffff;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--maroon);
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--ivory);
+  padding: 25px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+}

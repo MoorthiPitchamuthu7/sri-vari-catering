@@ -1,0 +1,49 @@
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+      <!-- Contact Info -->
+      <div class="info">
+        <p><strong>Sri Vari Catering</strong></p>
+        <p>📞 <a href="tel:+919842040824">+91 98420 40824</a></p>
+        <p>
+          💬
+          <a href="https://wa.me/919842040824" target="_blank">
+            WhatsApp Enquiry
+          </a>
+        </p>
+      </div>
+
+      <!-- Enquiry Form -->
+     <form class="form">
+        <input
+            type="text"
+            placeholder="Your Name"
+            [(ngModel)]="name"
+            name="name"
+        />
+
+        <input
+            type="tel"
+            placeholder="Mobile Number"
+            [(ngModel)]="phone"
+            name="phone"
+        />
+
+        <input type="date" [(ngModel)]="date" name="date" />
+
+        <textarea
+            placeholder="Event Details"
+            [(ngModel)]="message"
+            name="message"
+        ></textarea>
+
+        <button type="button" (click)="sendWhatsApp()">
+            Send Enquiry via WhatsApp
+        </button>
+        </form>
+
+    </div>
+  </div>
+</section>

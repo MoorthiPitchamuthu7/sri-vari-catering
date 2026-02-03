@@ -1,0 +1,48 @@
+:root {
+  --maroon: #7B1E1E;
+  --gold: #D4AF37;
+  --green: #2E7D32;
+  --ivory: #FFF8F0;
+  --dark: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--ivory);
+  color: var(--dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn:hover,
+.form button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin: 10px auto 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+

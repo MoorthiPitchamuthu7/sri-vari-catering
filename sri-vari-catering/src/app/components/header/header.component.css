@@ -1,0 +1,106 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--maroon);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Navigation */
+.nav a {
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  color: var(--gold);
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+.call {
+  background: #333;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--maroon);
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .actions.desktop {
+    display: none;
+  }
+
+  .actions.mobile {
+    margin-top: 15px;
+  }
+}

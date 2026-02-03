@@ -1,0 +1,39 @@
+.about {
+  padding: 70px 20px;
+  background: var(--ivory);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.text h2 {
+  font-size: 32px;
+  color: var(--maroon);
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: var(--dark);
+}
+
+.highlights {
+  background: var(--maroon);
+  padding: 25px 15px;
+}
+
+.highlights .items {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
