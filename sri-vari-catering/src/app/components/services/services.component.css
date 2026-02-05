@@ -1,35 +1,60 @@
 .services {
-  padding: 70px 20px;
+  padding: 80px 20px;
   background: #ffffff;
 }
 
-.services h2 {
+.section-title {
   text-align: center;
-  font-size: 32px;
+  font-size: 34px;
   color: var(--maroon);
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
-.cards {
+.service-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
 }
 
-.card {
-  background: var(--ivory);
-  padding: 25px;
-  border-radius: 6px;
+.service-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(0,0,0,.12);
+  transition: .35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service-card .content {
+  padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.card h3 {
-  color: var(--gold);
-  margin-bottom: 10px;
+.service-card h3 {
+  color: var(--maroon);
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
-.card p {
+.service-card p {
+  color: #666;
   font-size: 15px;
   line-height: 1.6;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .service-card img {
+    height: 160px;
+  }
 }

@@ -1,53 +1,70 @@
-.hero {
+.hero-slider {
   height: 85vh;
-  background: url("../../../assets/images/header-banner.png") no-repeat center
-    center/cover;
   position: relative;
+  overflow: hidden;
 }
 
-.overlay {
+/* Background animation */
+.slide {
   height: 100%;
-  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: bannerSlide 12s infinite ease-in-out;
+}
+
+/* Fade between banners */
+@keyframes bannerSlide {
+  0% {
+    background-image: url("/images/header-banner1.png");
+  }
+  33% {
+    background-image: url("/images/briyani-banner.png");
+  }
+  66% {
+    background-image: url("/images/buffet-banner.png");
+  }
+  100% {
+    background-image: url("/images/header-banner2.png");
+  }
+}
+
+/* Content overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.45);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.content {
   text-align: center;
   color: white;
   padding: 20px;
 }
 
-.content h1 {
+.overlay h1 {
   font-size: 42px;
-  margin-bottom: 15px;
   color: var(--gold);
 }
 
-.content p {
+.overlay p {
+  margin: 12px 0 22px;
   font-size: 18px;
-  margin-bottom: 25px;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.btn {
-  padding: 12px 22px;
-  border-radius: 5px;
+.hero-btn {
+  background: var(--gold);
+  padding: 12px 24px;
+  border-radius: 25px;
+  color: #3a1a1a;
   text-decoration: none;
-  color: white;
-  font-size: 15px;
+  font-weight: 600;
 }
 
-.call {
-  background: var(--maroon);
-}
-
-.whatsapp {
-  background: #25d366;
+/* Mobile */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 30px;
+  }
 }

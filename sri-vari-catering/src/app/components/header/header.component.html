@@ -1,14 +1,13 @@
 <header class="header">
   <div class="container">
-    <!-- Logo -->
+
+    <!-- Logo only (brand) -->
     <div class="logo">
-      <span>Sri Vari Catering</span>
+      <img src="/images/logo.png" alt="Sri Vari Catering Logo" />
     </div>
 
     <!-- Hamburger -->
-    <div class="hamburger" (click)="toggleMenu()">
-      ☰
-    </div>
+    <div class="hamburger" (click)="toggleMenu()">☰</div>
 
     <!-- Navigation -->
     <nav class="nav" [class.open]="menuOpen">
@@ -16,30 +15,12 @@
       <a href="#about" (click)="closeMenu()">About</a>
       <a href="#services" (click)="closeMenu()">Services</a>
       <a href="#menu" (click)="closeMenu()">Menu</a>
-      <a href="#contact" (click)="closeMenu()">Contact</a>
+      <a href="#gallery" (click)="closeMenu()">Gallery</a>
 
-      <div class="actions mobile">
-        <a href="tel:+919842040824" class="btn call">Call</a>
-        <a
-          href="https://wa.me/919842040824"
-          target="_blank"
-          class="btn whatsapp"
-        >
-          WhatsApp
-        </a>
-      </div>
+      <a href="#contact" class="cta mobile" (click)="closeMenu()">
+        Reach Out
+      </a>
     </nav>
 
-    <!-- Desktop Actions -->
-    <div class="actions desktop">
-      <a href="tel:+919842040824" class="btn call">Call</a>
-      <a
-        href="https://wa.me/919842040824"
-        target="_blank"
-        class="btn whatsapp"
-      >
-        WhatsApp
-      </a>
-    </div>
   </div>
 </header>

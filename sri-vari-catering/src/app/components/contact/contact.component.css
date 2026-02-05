@@ -1,63 +1,121 @@
 .contact {
-  padding: 70px 20px;
-  background: var(--ivory);
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #fff8f0, #ffffff);
+  font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
-.contact h2 {
+.section-title {
   text-align: center;
-  font-size: 32px;
+  font-size: 36px;
   color: var(--maroon);
-  margin-bottom: 35px;
+  margin-bottom: 6px;
+  letter-spacing: .5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 45px;
+  font-size: 16px;
 }
 
 .contact-box {
-  max-width: 900px;
+  max-width: 950px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  grid-template-columns: 1fr 1.2fr;
+  gap: 35px;
 }
 
-.info p {
-  font-size: 16px;
-  margin-bottom: 12px;
+/* Info card */
+
+.info-card {
+  background: var(--maroon);
+  color: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.15);
 }
 
-.info a {
-  color: var(--green);
+.info-card h3 {
+  font-size: 24px;
+  margin-bottom: 18px;
+  color: var(--gold);
+}
+
+.info-item {
+  font-size: 17px;
+  margin-bottom: 14px;
+}
+
+.info-item a {
+  color: white;
   text-decoration: none;
 }
 
-.form input,
-.form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: .85;
 }
 
-.form textarea {
-  min-height: 90px;
+/* Form card */
+
+.form-card {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.1);
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: .2s ease;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.form-card textarea {
+  min-height: 110px;
   resize: vertical;
 }
 
-.form button {
-  background: var(--maroon);
-  color: white;
-  padding: 10px;
+.form-card button {
+  width: 100%;
+  background: var(--gold);
+  color: #3a1a1a;
   border: none;
-  border-radius: 4px;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: 600;
   cursor: pointer;
+  transition: .3s ease;
+}
+
+.form-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
 }
 
 /* Mobile */
+
 @media (max-width: 768px) {
   .contact-box {
     grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 30px;
   }
 }

@@ -1,48 +1,44 @@
 <section class="contact" id="contact">
   <div class="container">
-    <h2>Contact Us</h2>
+
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="subtitle">Let us make your event delicious & memorable</p>
 
     <div class="contact-box">
-      <!-- Contact Info -->
-      <div class="info">
-        <p><strong>Sri Vari Catering</strong></p>
-        <p>📞 <a href="tel:+919842040824">+91 98420 40824</a></p>
-        <p>
-          💬
-          <a href="https://wa.me/919842040824" target="_blank">
-            WhatsApp Enquiry
-          </a>
+
+      <!-- Info Card -->
+      <div class="info-card">
+        <h3>Sri Vari Catering</h3>
+
+        <div class="info-item">
+          📞 <a href="tel:+919842040824">+91 98420 40824</a>
+        </div>
+
+        <div class="info-item">
+          💬 <a href="https://wa.me/919842040824" target="_blank">Chat on WhatsApp</a>
+        </div>
+
+        <p class="note">
+          Available for weddings, parties & corporate events
         </p>
       </div>
 
-      <!-- Enquiry Form -->
-     <form class="form">
-        <input
-            type="text"
-            placeholder="Your Name"
-            [(ngModel)]="name"
-            name="name"
-        />
-
-        <input
-            type="tel"
-            placeholder="Mobile Number"
-            [(ngModel)]="phone"
-            name="phone"
-        />
-
+      <!-- Form Card -->
+      <form class="form-card">
+        <input type="text" placeholder="Full Name" [(ngModel)]="name" name="name" />
+        <input type="tel" placeholder="Mobile Number" [(ngModel)]="phone" name="phone" />
         <input type="date" [(ngModel)]="date" name="date" />
 
         <textarea
-            placeholder="Event Details"
-            [(ngModel)]="message"
-            name="message"
+          placeholder="Tell us about your event (guests, menu, location...)"
+          [(ngModel)]="message"
+          name="message"
         ></textarea>
 
         <button type="button" (click)="sendWhatsApp()">
-            Send Enquiry via WhatsApp
+          Send via WhatsApp
         </button>
-        </form>
+      </form>
 
     </div>
   </div>
