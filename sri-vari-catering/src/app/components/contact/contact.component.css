@@ -119,3 +119,30 @@
     font-size: 30px;
   }
 }
+
+.map-section {
+  padding: 70px 20px;
+  background: #fff;
+}
+
+.map-box {
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(0,0,0,.15);
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 380px;
+  border: none;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .map-box iframe {
+    height: 260px;
+  }
+}

@@ -46,3 +46,22 @@ h2::after {
   }
 }
 
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--gold);
+  color: #3a1a1a;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,.3);
+  transition: .3s ease;
+}
+
+.scroll-top:hover {
+  transform: translateY(-4px);
+}

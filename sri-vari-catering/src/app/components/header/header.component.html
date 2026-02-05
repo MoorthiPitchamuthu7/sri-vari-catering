@@ -1,15 +1,14 @@
 <header class="header">
   <div class="container">
 
-    <!-- Logo only (brand) -->
     <div class="logo">
-      <img src="/images/logo.png" alt="Sri Vari Catering Logo" />
+      <a href="#home">
+        <img src="/images/logo.png" alt="Sri Vari Catering Logo" />
+      </a>
     </div>
 
-    <!-- Hamburger -->
     <div class="hamburger" (click)="toggleMenu()">☰</div>
 
-    <!-- Navigation -->
     <nav class="nav" [class.open]="menuOpen">
       <a href="#home" (click)="closeMenu()">Home</a>
       <a href="#about" (click)="closeMenu()">About</a>

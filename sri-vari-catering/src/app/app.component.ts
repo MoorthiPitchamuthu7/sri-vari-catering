@@ -21,4 +21,8 @@ import { NgModel } from '@angular/forms';
 })
 export class AppComponent {
   protected readonly title = signal('sri-vari-catering');
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

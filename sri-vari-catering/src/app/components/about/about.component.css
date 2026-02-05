@@ -36,4 +36,51 @@
   color: white;
   font-weight: 500;
 }
+.trust-counter {
+  padding: 80px 20px;
+  background: #fff;
+}
 
+.trust-counter .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.counter-box {
+  background: var(--ivory);
+  padding: 35px 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.12);
+}
+
+.icon {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.count {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--maroon);
+}
+
+.counter-box p {
+  margin-top: 6px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Fade + slide animation */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .7s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
