@@ -126,6 +126,7 @@
 }
 
 .map-box {
+  width: 100%;
   max-width: 1000px;
   margin: auto;
   border-radius: 14px;
@@ -144,5 +145,48 @@
 @media (max-width: 768px) {
   .map-box iframe {
     height: 260px;
+  }
+}
+
+.addresses {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #eee;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.map-box h4 {
+  text-align: center;
+  margin-bottom: 8px;
+  color: var(--maroon);
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.15);
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Mobile stack */
+
+@media (max-width: 900px) {
+  .map-grid {
+    grid-template-columns: 1fr;
   }
 }
