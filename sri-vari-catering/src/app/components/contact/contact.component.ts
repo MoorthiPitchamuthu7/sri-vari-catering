@@ -24,7 +24,7 @@ export class ContactComponent {
     `;
 
     const url =
-      'https://wa.me/919524547041?text=' + encodeURIComponent(text);
+      'https://wa.me/919842040824?text=' + encodeURIComponent(text);
 
     window.open(url, '_blank');
   }
