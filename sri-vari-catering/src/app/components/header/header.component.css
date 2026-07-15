@@ -64,28 +64,6 @@
   opacity: 0.9;
 }
 
-/* Sign In button (links to the customer web portal) */
-.signin {
-  border: 1.5px solid var(--gold);
-  color: var(--gold);
-  padding: 7px 20px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: .3s ease;
-}
-
-.signin:hover {
-  background: var(--gold);
-  color: #3a1a1a;
-}
-
-.signin.mobile {
-  display: none;
-}
-
 /* Hamburger */
 .hamburger {
   display: none;
@@ -125,15 +103,6 @@
 
   .cta.mobile {
     display: block;
-  }
-
-  .signin.desktop {
-    display: none;
-  }
-
-  .signin.mobile {
-    display: block;
-    margin: 12px 0 0;
   }
 }
 

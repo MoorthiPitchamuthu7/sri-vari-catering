@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { EXTERNAL_LINKS } from '../../config/external-links';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +9,6 @@ import { EXTERNAL_LINKS } from '../../config/external-links';
 })
 export class HeaderComponent {
   menuOpen = false;
-  signInUrl = EXTERNAL_LINKS.portalCustomerLogin;
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
