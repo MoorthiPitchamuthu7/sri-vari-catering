@@ -1,0 +1,81 @@
+.download-app {
+  background: linear-gradient(to right, var(--maroon), #5a1414);
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.da-text h2 {
+  color: var(--gold);
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.da-text p {
+  color: #eee;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Play Store style button */
+.da-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #000;
+  color: #fff;
+  border: 1.5px solid var(--gold);
+  border-radius: 10px;
+  padding: 10px 22px;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.da-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .35);
+}
+
+.da-btn-icon {
+  font-size: 26px;
+  color: var(--gold);
+}
+
+.da-btn-label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.da-btn-label small {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+.da-btn.coming-soon {
+  cursor: default;
+  opacity: .85;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .da-text h2 {
+    font-size: 22px;
+  }
+}

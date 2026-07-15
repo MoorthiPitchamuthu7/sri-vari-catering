@@ -8,14 +8,15 @@ import { MenuComponent } from './components/menu/menu.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { TestimonialsComponent } from './components/testimonials/testimonials.component'; 
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { DownloadAppComponent } from './components/download-app/download-app.component';
 import { FormsModule } from '@angular/forms';
 import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormsModule, RouterOutlet, HeaderComponent, HeroComponent, AboutComponent, ServicesComponent, MenuComponent, GalleryComponent, ContactComponent, FooterComponent, TestimonialsComponent],
+  imports: [FormsModule, RouterOutlet, HeaderComponent, HeroComponent, AboutComponent, ServicesComponent, MenuComponent, GalleryComponent, ContactComponent, FooterComponent, TestimonialsComponent, DownloadAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

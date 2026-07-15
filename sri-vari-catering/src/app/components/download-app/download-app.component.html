@@ -1,0 +1,33 @@
+<section class="download-app" id="download-app">
+  <div class="container">
+
+    <div class="da-text">
+      <h2>Get the Sri Vari Catering App</h2>
+      <p>
+        Plan your events, track your bookings and view your bills —
+        right from your phone.
+      </p>
+    </div>
+
+    <div class="da-action">
+      @if (appPublished) {
+        <a class="da-btn" [href]="playStoreUrl" target="_blank" rel="noopener">
+          <span class="da-btn-icon">▶</span>
+          <span class="da-btn-label">
+            <small>GET IT ON</small>
+            Google Play
+          </span>
+        </a>
+      } @else {
+        <span class="da-btn coming-soon" title="Our Android app is on its way!">
+          <span class="da-btn-icon">▶</span>
+          <span class="da-btn-label">
+            <small>COMING SOON ON</small>
+            Google Play
+          </span>
+        </span>
+      }
+    </div>
+
+  </div>
+</section>
